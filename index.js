@@ -1,0 +1,6 @@
+const express=require('express')
+const  UserRouter =require('./route/user')
+const app=express()
+app.use(express.json())
+app.use(UserRouter)
+app.listen(3000)
